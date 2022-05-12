@@ -1,0 +1,315 @@
+/*Header styling!!*/
+
+/* I want the header to stay put, and I'm getting close--maintained the placement of the links, made the background white,
+ but it's still got a gap above that's visible while scrolling down. Buh.*/
+ header{
+    position:fixed;
+    width: 100%;
+    background-color: white;
+    top:0;
+    /*For some reason the javascript animation for the skill section makes it run over the navbar
+    Setting the z-index keeps it on top*/
+    z-index:5;
+}
+
+.inline-block{
+    display:inline-block;
+    vertical-align:top;
+    font-family:"Bebas Neue", sans-serif;
+    font-size:larger;
+    text-align:right;
+    /*line-height:10px;*/
+} 
+/*div.navbar{
+    margin:0px;
+    
+}*/
+li.navLink{
+    font-family:"Bebas Neue", sans-serif;
+    font-size:larger;
+    color:#c7d3bf;
+    margin-right:20px;
+}
+li a{
+    font-family:"Bebas Neue", sans-serif;
+    font-size:larger;
+    color:#c7d3bf;
+    margin-right:20px;
+    text-decoration: none;
+}
+li a:active{
+    background:#F4F7F3;
+    color:#8b635c;
+}
+li a:hover{
+    background:#F4F7F3;
+    color:#c49682;
+    /*padding:10px;*/ /*This makes the menu kind of jump around on hover*/
+    
+}
+/*Okay, so these links don't actualy exist yet, but I'll be ready for them!!
+a.navLink:visited{
+    font-family:"Bebas Neue", sans-serif;
+    font-size:larger;
+    color:#c7d3bf;
+}
+a.navLink:active{
+    font-family:"Bebas Neue", sans-serif;
+    font-size:larger;
+    color:#8b635c;
+}
+*/
+
+div.logo{
+    width:73%;
+    padding:0%;
+    text-align:right;
+}
+
+section{
+    /*height:100vh;*/
+    padding-top:15%;
+    vertical-align: center;
+}
+/*section{
+    margin-bottom:8%;
+}*/
+nav{
+    width:80%;
+    padding:0%;
+}
+ul{
+    width:100%;
+    margin-left:auto;
+}
+.logo{
+    text-align: center;
+}
+/*Styling the sections/main body here!*/
+a{
+    font-family:"Montserrat",sans-serif;
+    font-weight:bold;
+    color:#8b635c;
+    text-decoration:none;
+    font-weight:bolder;
+    font-size:larger;
+}
+a:visited{
+    font-family:"Montserrat",sans-serif;
+    font-weight:bold;
+    color:#c49682;
+    text-decoration:none;
+    font-weight:bolder;
+    font-size:larger;
+}
+
+section.heroImg{
+    /*This height bit is really wreaking havoc with the layout! 
+    height:500px; */
+    padding:5%;
+    top:0px;
+}
+.content{
+    width:80%;
+    max-width: 100vh;
+    margin:25px auto;
+}
+.content img{
+    float:left;
+    padding:10px;
+    width:50%;
+    height:auto;
+}
+
+h1{
+    font-family:"Bebas Neue",serif;
+    font-size:55px;
+    color:#8b635c;
+    margin:10px 0px
+}
+
+h2{
+    font-family:"Bebas Neue",serif;
+    font-size:40px;
+    color:#c49682;
+    margin:0px 0px
+}
+
+h3{
+    font-family:"Bebas Neue",serif;
+    font-size:30px;
+    color:#8b635c;
+    margin:30px 0px;
+    text-align:center;
+}
+
+h4{font-family:"Bebas Neue",serif;
+    font-size:30px;
+    color:#c49682;
+    margin:0px 0px;
+}
+
+p{
+    font-family:"Montserrat",sans-serif;
+}
+button{
+    background-color: #c49682;
+    border:none;
+    color:#ffffff;
+    font-family:"Bebas Neue", sans-serif;
+    font-size:24px;
+    text-align:center;
+    padding:20px;
+    border-radius:8px;
+    margin:40px 0px 20px 0px;
+    transition: all 0.5s;
+    width:260px;
+}
+button span{ /*if I delete 'span' here, it makes the content (arrows) appear tiny and up in the right-hand corner,
+    it doesn't move, though, and the text shifts more abruptly*/
+    cursor:default;
+    display: inline-block;
+    position:relative;
+    transition: 0.5s;
+}
+
+button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity:0;
+    right:0px;
+    top:0px;
+    transition:0.5s;
+}
+button:hover span{
+    padding-right:25px;
+}
+button:hover span:after{
+    opacity:1;
+    right:0;
+}
+button.project{
+    background-color: #c7d3bf;
+    border:none;
+    color:#ffffff;
+    font-family:"Bebas Neue", sans-serif;
+    font-size:20px;
+    text-align:center;
+    padding:10px 20px;
+    border-radius:8px;
+    margin:5px 0px 8px 0px;
+}
+/*Here's the flex container for the My Skills section*/
+
+div.flexContainer{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+}
+
+div.skills{
+    width:30%;
+    text-align: center;
+    margin:1%;
+    background-color:#F4F7F3;
+    padding:5px;
+    /*border-radius: 5px;*/ /*This made the corners rounded, which I kind of like, 
+    but it doesn't really match the images, just the buttons; 
+    need to think about this more later;*/
+}
+p.skills{
+    margin-top:0;
+}
+
+/*Featured Work / Projects section starring CSS Grid*/
+/*In addition to W3Schools I used a book "HTML, CSS, & JavaScript in Easy Steps" by Mike McGrath
+because I'm an old soul and seem to learn better with books*/
+div.workGrid{
+    display:grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    align-items: center;
+    width:70%;
+    margin:auto;
+    grid-template-areas:
+    'img txt'
+    'img txt'
+    'img txt';
+}
+
+div.workGrid > div{
+    margin: 5px;
+    /*border-top: 2px solid #c7d3bf;*/
+}
+/*I want to make a short horizontal line between breaks; border and hr are both longer than I want,
+but I guess I can make the line kind of pretty?
+/* Inset, by Dan Eden, via  https://css-tricks.com/examples/hrs/*/
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid #c7d3bf;
+    border-bottom: 3px solid #F4F7F3;
+}
+
+/*Styling the footer here!*/
+footer{
+    /*position:fixed;*/
+    left:0;
+    bottom:0;
+    width:100%;
+    background-color:#F4F7F3;
+    vertical-align: bottom;
+    text-align:center;
+}
+footer a:link{
+    color:#8b635c;
+    font-weight:bolder;
+    text-decoration: none;
+    font-family:"Montserrat",sans-serif;
+    font-size:larger;
+}
+footer a:hover{
+    color:#c7d3bf;
+    font-weight:bolder;
+    text-decoration: none;
+    font-family:"Montserrat",sans-serif;
+    font-size:larger;
+}
+
+footer{
+    text-align:left;
+    padding:1%;
+    text-align:center;
+    font-family:"Montserrat",sans-serif;
+    font-size:medium;
+    bottom:0;
+}
+
+/*Here's the media query for viewing on mobile devices with width of up to 600px*/
+@media screen and (max-width:600px){
+    div.flexContainer{
+        display:flex;
+        flex-wrap:wrap;
+        flex-direction:column;
+    }   
+    div.skills{
+        width:100%;
+        text-align: center;
+        margin:1%;
+    }
+        div.workGrid{
+            display:grid;
+            grid-template-columns: auto;
+            grid-template-rows: auto auto auto auto auto auto;
+            /*align-items: center;
+            width:50%;
+            margin:auto; */
+            grid-template-areas:
+            'img1'
+            'box1'
+            'img2'
+            'box2'
+            'img3'
+            'box3';
+        }
+}

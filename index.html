@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Elizabeth Jones UX and Analysis</title>
+        <link rel="stylesheet" href="css/style.css">
+
+        <style>
+            html{
+                scroll-behavior: smooth;
+            }
+            </style>
+    </head>
+<body>
+<header>
+    <div class="navbar">
+        <img src="images/littlelogo.png">
+        <nav class="inline-block">
+            <ul>
+                <!--<li class="inline-block navLink"><a href="#about" class="current">About</a></li>-->
+            <li class="inline-block navLink"><a href="#about">About</a></li>
+            <li class="inline-block navLink"><a href="#skills">Skills</a></li>
+            <li class="inline-block navLink"><a href="#work">Work</a></li>
+            <li class="inline-block navLink"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav></div>
+        </header>
+
+<section class="heroImg" id="about">
+    <div class="content about">
+        <img src="images/lizpic.png" alt="This is a photo of me, Liz, heroically cradling a worried-looking dog as I stare fiercely into the setting sun." title="I can save your project just like I saved this dog.">
+        <h1>About Me</h1>
+        <p>As an epidemiologist turned UX researcher, I love working to understand users’ needs and to find solutions to their problems. I’m passionate about data, and discovering the insights in the numbers. <br>As a recent graduate of a UX/UI bootcamp, I hope to work as a junior UX researcher; I’d be happy to discuss freelance opportunities as well.</p>
+        <p style="text-align:center"><button class="download" style="vertical-align:middle"><span>Download Resume </span></button></p>
+        </div>
+</section>
+
+<!--Here is the "My Skills" section. I'd like everything on the same page and then it hops down if you're
+    impatient and click on the nav bar, but otherwise you can scroll.-->
+<section id="skills">
+    <center><h1>My Skills</h1></center>
+    <p align="center">Through my recent UX/UI training, work experience, and education, 
+        I have cultivated a wide range of skills I can apply to an array of projects.<br>
+        To learn more about what I can contribute to your project, 
+        please see my <a href="#resume" target="_blank">resume</a> or connect with me on <a href="#LinkedIn page" target="_blank">LinkedIn</a>.</p>
+        <!--Need to read up on Affinity Designer and figure out how to make the stuff inside the circles white, 
+            and the stuff outside the circles transparent-->
+    <!--My UX Skills section coded using CSS Flex-->
+        <div class="flexContainer">
+            <div class="skills"><img src="images/userresearchicon.png" width="90px" alt="Icon of a gear superimposed over the profile of a head"><br>
+                <h2>User Research</h2><br>
+                <p class="skills">Survey development<br>
+                    User interviews and testing<br>
+                    Heuristic evaluation<br></p></div>
+            <div class="skills"><img src="images/analysisicon.png" width="90px" alt="Icon of a simplified line graph"><br>
+                <h2>Analytics</h2><br>
+                <p class="skills">Data analysis and visualization in SAS, R, and Python<br>
+                    Data dashboarding in Tableau<br>
+                    ArcGIS</p></div>
+            <div class="skills"><img src="images/designicon.png" width="90 px"alt="Icon of a pencil and a ruler overlapping to form an X shape"><br>
+                <h2>Design</h2><br>
+                <p class="skills">Conversant in front-end development technologies<br>
+                Balsamiq Wireframes<br>
+                Figma<br>
+                Adobe Photoshop, Illustrator, and InDesign</p></div>
+        </div>
+<p></p>
+ </section>
+
+ <!--Here is the section showcasing My Work, I guess-->
+ <section id="work">
+     <center><h1>Featured Projects</h1></center>
+    <!-- <p>Here is some of my recent work.</p> -->
+    <div class="workGrid">
+     <div class="workImg img1"><img src="images/SmithRocks.png" width="300px" title="For now, this is a picture of Smith Rocks because that is where I would rather be right now."></div>
+     <div class="box1"><hr><h4>FIRST PROJECT</h4><br><p>Pretend like this is very profound text, a two- to three-sentence summary that captivates the imagination and makes you want to know more. So inspiring; so intriguing.</p><br>
+        <button class="project">Details! Details!</button></div>
+    <div class="workImg img2"><img src="images/craterlake.png" width="300px" title="And this is Wizard Island covered in snow."></div>
+    <div class="box2"><hr><h4>SECOND PROJECT</h4><br><p>It's so satisfying to get the coding to work! Even if I guess I won't really use it much.</p></br>
+        <button class="project">I must see more!</button></div>
+    <div class="workImg img3"><img src="images/blackbutteranch.png" width="300px" title="And here is part of the Deschutes National Forest but I doubt the sky has looked like that in my lifetime."></div>
+    <div class="box3"><hr><h4>THIRD PROJECT</h4><br><p>Woo-hoo! Look at this responsive stacking magic.</p></br>
+        <button class="project">Heavens to Betsy!</button></div>
+    </div>
+    <h3>View all projects</h3>
+</section>
+
+<!--Here's where the truly desperate can try to hire me.-->
+<section id="contact">
+    <h1>Contact Me</h1>
+    <div>
+   <!-- <img src="images/soflattering.jpg" width="50%" alt="A banner proclaims 'No Sacrifice No Victory' and standing underneath it, I am grimacing with my eyes closed and a sweatshirt from a University that doesn't even have official colors. Nevermind which one.">-->
+    <p>By now you're convinced that I can bring what you need to your project. Let's work together!<br>
+    <a href="mailto:lizmariebee@gmail.com">lizmariebee@gmail.com</a><br>
+    <a href="https://www.linkedin.com/" target="_blank"><img src="images/LI-In-Bug.png" width="50"></a>
+    </div>
+</section>
+
+<section>
+<footer>
+     <br><small>Copyright &copy; Elizabeth Jones 2022</small></p>
+ </footer>         
+</section>
+</body>
+</html>
+
+<script src="script.js">
+    </script>
